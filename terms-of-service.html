@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova Workout | Terms of Service</title>
+  <meta name="description" content="Terms of Service for Nova Workout And Gym Tracker.">
+
+  <style>
+    :root {
+      --bg: #020817;
+      --bg-deep: #001233;
+      --surface: rgba(255,255,255,0.04);
+      --surface-strong: rgba(255,255,255,0.06);
+      --surface-soft: rgba(255,255,255,0.03);
+      --text: #eef5ff;
+      --muted: #8ea7c9;
+      --muted-2: #6f88aa;
+      --cyan: #20d9ff;
+      --cyan-2: #7cebff;
+      --amber: #ffb55e;
+      --border: rgba(255,255,255,0.09);
+      --shadow: 0 24px 60px rgba(0,0,0,0.35);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --max: 1040px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(32,217,255,0.12), transparent 22%),
+        radial-gradient(circle at 15% 20%, rgba(255,181,94,0.05), transparent 16%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--cyan-2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(4,18,43,0.92);
+      border-bottom: 1px solid rgba(32,217,255,0.14);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.22);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 0;
+    }
+
+    .brand-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      flex: 0 0 auto;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      max-width: 44px;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.28);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      line-height: 1.1;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 14px;
+      transition: color 0.18s ease;
+    }
+
+    .nav a:hover {
+      color: var(--text);
+    }
+
+    .page-hero {
+      padding: 54px 0 22px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      color: var(--amber);
+      background: rgba(255,181,94,0.08);
+      border: 1px solid rgba(255,181,94,0.18);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--amber);
+      box-shadow: 0 0 14px rgba(255,181,94,0.75);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 52px;
+      line-height: 0.98;
+      letter-spacing: -1.8px;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .meta-pill {
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .page-wrap {
+      padding: 16px 0 56px;
+    }
+
+    .page-grid {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 98px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .sidebar-title {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .sidebar-nav {
+      display: grid;
+      gap: 8px;
+    }
+
+    .sidebar-nav a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 14px;
+      transition: background 0.18s ease, color 0.18s ease;
+    }
+
+    .sidebar-nav a:hover {
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .content-card {
+      border-radius: 28px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .intro-callout {
+      border-radius: 20px;
+      padding: 18px 18px;
+      margin-bottom: 22px;
+      background: rgba(255,181,94,0.08);
+      border: 1px solid rgba(255,181,94,0.16);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .policy-section {
+      padding: 22px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .policy-section:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      letter-spacing: -0.7px;
+    }
+
+    h3 {
+      margin: 18px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+    }
+
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .info-card {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+    }
+
+    .info-label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .info-value {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .site-footer {
+      padding: 24px 0 40px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-copy {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .page-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      h1 {
+        font-size: 40px;
+        letter-spacing: -1.3px;
+      }
+
+      .content-card {
+        padding: 22px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page-hero {
+        padding-top: 42px;
+      }
+
+      .hero-copy,
+      p, li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-wrap" href="/">
+        <img class="brand-logo" src="/NovaWorkout.png" alt="Nova Workout logo">
+        <div class="brand-text">
+          <div class="brand-name">Nova Workout</div>
+          <div class="brand-sub">Gym tracker</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms-of-service.html">Terms of Service</a>
+        <a href="/delete-account.html">Delete Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Legal terms
+        </div>
+
+        <h1>Terms of Service</h1>
+
+        <p class="hero-copy">
+          These Terms of Service govern your use of Nova Workout And Gym Tracker.
+          By accessing or using the App, you agree to these terms.
+        </p>
+
+        <div class="meta-row">
+          <div class="meta-pill">Last updated: 2026-03-23</div>
+          <div class="meta-pill">Applies to Nova Workout And Gym Tracker</div>
+          <div class="meta-pill">Contact: support@novastore.co.za</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-wrap">
+      <div class="container page-grid">
+        <aside class="sidebar">
+          <div class="sidebar-title">On this page</div>
+          <nav class="sidebar-nav">
+            <a href="#operator">Operator</a>
+            <a href="#acceptance">Acceptance of terms</a>
+            <a href="#eligibility">Eligibility and accounts</a>
+            <a href="#license">App license</a>
+            <a href="#subscriptions">Subscriptions and purchases</a>
+            <a href="#acceptable-use">Acceptable use</a>
+            <a href="#content">Your content and data</a>
+            <a href="#availability">Availability and updates</a>
+            <a href="#termination">Termination</a>
+            <a href="#disclaimers">Disclaimers</a>
+            <a href="#liability">Limitation of liability</a>
+            <a href="#law">Governing law</a>
+            <a href="#changes">Changes to these terms</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </aside>
+
+        <div class="content-card">
+          <div class="intro-callout">
+            These terms are intended to set clear rules for using the App. If
+            you do not agree with these Terms of Service, please do not use Nova
+            Workout And Gym Tracker.
+          </div>
+
+          <section id="operator" class="policy-section">
+            <h2>Operator</h2>
+
+            <div class="info-grid">
+              <div class="info-card">
+                <div class="info-label">Operator</div>
+                <div class="info-value">NOVASTORE (PTY) LTD</div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-label">App</div>
+                <div class="info-value">Nova Workout And Gym Tracker</div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-label">Contact</div>
+                <div class="info-value">
+                  <a href="mailto:support@novastore.co.za">support@novastore.co.za</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="acceptance" class="policy-section">
+            <h2>Acceptance of terms</h2>
+            <p>
+              By downloading, accessing, or using the App, you agree to be bound
+              by these Terms of Service and our Privacy Policy. If you use the
+              App on behalf of another person or entity, you confirm that you
+              have authority to accept these terms on their behalf.
+            </p>
+          </section>
+
+          <section id="eligibility" class="policy-section">
+            <h2>Eligibility and accounts</h2>
+            <p>
+              You must provide accurate information when creating an account and
+              keep your login credentials secure. You are responsible for
+              activities that occur under your account.
+            </p>
+            <p>
+              You agree not to impersonate another person, create accounts using
+              false information, or access accounts that do not belong to you.
+            </p>
+          </section>
+
+          <section id="license" class="policy-section">
+            <h2>App license</h2>
+            <p>
+              Subject to these terms, we grant you a limited, non-exclusive,
+              non-transferable, revocable license to use the App for your
+              personal, non-commercial use.
+            </p>
+            <p>You may not:</p>
+            <ul>
+              <li>copy, resell, rent, lease, or sublicense the App;</li>
+              <li>reverse engineer, decompile, or attempt to extract source code except where allowed by law;</li>
+              <li>interfere with the App's security, stability, or normal operation;</li>
+              <li>use the App in a way that violates applicable law or third-party rights.</li>
+            </ul>
+          </section>
+
+          <section id="subscriptions" class="policy-section">
+            <h2>Subscriptions and purchases</h2>
+            <p>
+              Some features may require a paid subscription or in-app purchase.
+              Prices, billing terms, trial availability, and renewal terms are
+              shown at the point of purchase through the relevant app store or
+              payment platform.
+            </p>
+            <p>
+              Unless otherwise stated, subscriptions may renew automatically
+              until cancelled. You are responsible for managing your purchases
+              and cancellations through the platform you used to subscribe.
+            </p>
+            <p>
+              Refunds, where available, are generally handled by the app store
+              or payment provider and are subject to their policies.
+            </p>
+          </section>
+
+          <section id="acceptable-use" class="policy-section">
+            <h2>Acceptable use</h2>
+            <p>You agree not to use the App to:</p>
+            <ul>
+              <li>upload malicious code, spam, or abusive content;</li>
+              <li>attempt unauthorized access to systems, accounts, or data;</li>
+              <li>disrupt or damage the App, its servers, or related services;</li>
+              <li>use the App for unlawful, fraudulent, or misleading purposes;</li>
+              <li>collect or misuse other users' information without permission.</li>
+            </ul>
+          </section>
+
+          <section id="content" class="policy-section">
+            <h2>Your content and data</h2>
+            <p>
+              You retain ownership of the workout logs, profile details,
+              progress records, and other content you create in the App.
+            </p>
+            <p>
+              You grant us permission to host, process, store, and display that
+              content only as reasonably necessary to operate, maintain, secure,
+              and improve the App.
+            </p>
+            <p>
+              You are responsible for ensuring that your content does not
+              violate any law or the rights of others.
+            </p>
+          </section>
+
+          <section id="availability" class="policy-section">
+            <h2>Availability and updates</h2>
+            <p>
+              We may update, modify, suspend, or discontinue any part of the App
+              at any time. We do not guarantee that the App will always be
+              available, uninterrupted, secure, or error-free.
+            </p>
+            <p>
+              We may release updates, bug fixes, patches, or new features, and
+              some functionality may require you to install the latest version
+              of the App.
+            </p>
+          </section>
+
+          <section id="termination" class="policy-section">
+            <h2>Termination</h2>
+            <p>
+              We may suspend or terminate your access to the App if you violate
+              these terms, misuse the service, create risk for us or other
+              users, or where required by law.
+            </p>
+            <p>
+              You may stop using the App at any time. If you wish to delete your
+              account, please follow the steps on our
+              <a href="/delete-account.html">Delete Account</a> page.
+            </p>
+          </section>
+
+          <section id="disclaimers" class="policy-section">
+            <h2>Disclaimers</h2>
+            <p>
+              The App is provided on an "as is" and "as available" basis to the
+              maximum extent permitted by law. We do not make warranties,
+              express or implied, regarding merchantability, fitness for a
+              particular purpose, non-infringement, or uninterrupted operation.
+            </p>
+            <p>
+              Nova Workout And Gym Tracker is intended to support workout
+              tracking and fitness organization. It does not provide medical
+              advice, diagnosis, or treatment. Always seek professional advice
+              where appropriate.
+            </p>
+          </section>
+
+          <section id="liability" class="policy-section">
+            <h2>Limitation of liability</h2>
+            <p>
+              To the maximum extent permitted by law, NOVASTORE (PTY) LTD will
+              not be liable for any indirect, incidental, special,
+              consequential, or punitive damages, or for any loss of data,
+              revenue, profits, goodwill, or business opportunity arising from
+              or related to your use of the App.
+            </p>
+            <p>
+              Where liability cannot be excluded, our total liability for claims
+              arising out of or relating to the App will be limited to the
+              amount you paid to use the App in the 12 months before the event
+              giving rise to the claim, or, if greater, the minimum amount
+              required by applicable law.
+            </p>
+          </section>
+
+          <section id="law" class="policy-section">
+            <h2>Governing law</h2>
+            <p>
+              These terms are governed by the laws of South Africa, without
+              regard to conflict of law principles. Subject to applicable law,
+              disputes arising from these terms or your use of the App will be
+              subject to the jurisdiction of the courts of South Africa.
+            </p>
+          </section>
+
+          <section id="changes" class="policy-section">
+            <h2>Changes to these terms</h2>
+            <p>
+              We may update these Terms of Service from time to time. When we do,
+              we will revise the "Last updated" date on this page. Your
+              continued use of the App after updated terms become effective
+              means you accept the revised terms.
+            </p>
+          </section>
+
+          <section id="contact" class="policy-section">
+            <h2>Contact</h2>
+            <p>
+              If you have questions about these Terms of Service, please contact
+              us at <a href="mailto:support@novastore.co.za">support@novastore.co.za</a>.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms-of-service.html">Terms of Service</a>
+        <a href="/delete-account.html">Delete Account</a>
+      </div>
+
+      <div class="footer-copy">
+        Copyright 2026 NOVASTORE (PTY) LTD. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
